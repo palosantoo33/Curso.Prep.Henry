@@ -171,7 +171,7 @@ function obtenerSaludo(nombre) {
   // Tu código:
   var nombre = 'martin'
 const hola = 'hola'
- return hola + martin + '!';
+ return hola + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
