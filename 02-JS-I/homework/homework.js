@@ -60,7 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y) {return true;} 
+  if (x === y) {return true;} 
   {return false;} 
 }
 
@@ -101,7 +101,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if num ( % 2  = 0)  {return true;}
+  if (num  % 2  === 0)  {return true;}
   {return false;
 }
 }
@@ -110,7 +110,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if num =( % 2 = 1) {return true;}
+  if (num % 2 === 1) {return true;}
   {return false;}
 }
 
@@ -138,7 +138,10 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" y devuélvelo
   // Tu código:
-  return round num;
+  var resto = num % 1;
+  var entero = num - resto
+  if (resto >= 0.5) {return entero +1}
+  else return entero
 }
 
 function redondearHaciaArriba(num) {
@@ -169,8 +172,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var nombre = 'martin'
-const hola = 'hola'
+  var nombre = 'Martin'
+const hola = 'Hola'
  return hola + ' ' + nombre + '!';
 }
 
